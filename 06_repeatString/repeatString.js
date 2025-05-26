@@ -8,7 +8,7 @@ const repeatString = function(words, num) {
 };
 
 // Example usage:
-console.log(repeatString('hey', 3)); // Output: heyheyhey
+console.log(repeatString('ocio!', 6)); // Output: ocio!ocio!ocio!ocio!ocio!ocio!
 
 // Do not edit below this line
 module.exports = repeatString;
