@@ -32,3 +32,13 @@ const factorial = function(n) {
   return product;
 };
 
+// Exports all calculator functions so they can be used in other files
+module.exports = {
+  add,
+  subtract,
+  sum,
+  multiply,
+  power,
+  factorial
+};
+
