@@ -8,3 +8,7 @@ const subtract = function(a, b) {
   return a - b;
 };
 
+// Computes the sum of all numbers in an array
+const sum = function(array) {
+  return array.reduce((total, current) => total + current, 0);
+};
