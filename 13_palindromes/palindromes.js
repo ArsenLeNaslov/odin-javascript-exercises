@@ -9,3 +9,6 @@ const cleanedString = string
   .split('')
   .filter(char => alphanumerical.includes(char))
   .join('');
+
+// Checks if the cleaned string is equal to its reverse
+const reversedString = cleanedString.split('').reverse().join('');
