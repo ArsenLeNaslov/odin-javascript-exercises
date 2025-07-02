@@ -12,3 +12,13 @@ const subtract = function(a, b) {
 const sum = function(array) {
   return array.reduce((total, current) => total + current, 0);
 };
+
+// Multiplies all numbers in an array and returns the product
+const multiply = function(array) {
+  return array.reduce((product, current) => product * current);
+};
+
+// Raises the 1st number to the power of the 2nd number
+const power = function(a, b) {
+  return Math.pow(a, b);
+};
