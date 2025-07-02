@@ -2,61 +2,61 @@ const findTheOldest = require('./findTheOldest')
 
 describe('findTheOldest', () => {
   test('finds the person with the greatest age!', () => {
-    const people = [
+    const populus = [
       {
         name: "Carly",
-        yearOfBirth: 1942,
-        yearOfDeath: 1970,
+        annusNatalis: 1942,
+        annusMortis: 1970,
       },
       {
         name: "Ray",
-        yearOfBirth: 1962,
-        yearOfDeath: 2011,
+        annusNatalis: 1962,
+        annusMortis: 2011,
       },
       {
         name: "Jane",
         yearOfBirth: 1912,
-        yearOfDeath: 1941,
+        annusMortis: 1941,
       },
     ]
-    expect(findTheOldest(people).name).toBe('Ray');
+    expect(findTheOldest(populus).name).toBe('Ray');
   });
   test('finds the oldest person if yearOfDeath field is undefined on a non-oldest person', () => {
-    const people = [
+    const populus = [
       {
         name: "Carly",
-        yearOfBirth: 2018,
+        annusNatalis: 2018,
       },
       {
         name: "Ray",
-        yearOfBirth: 1962,
-        yearOfDeath: 2011,
+        annusNatalis: 1962,
+        annusMortis: 2011,
       },
       {
         name: "Jane",
-        yearOfBirth: 1912,
-        yearOfDeath: 1941,
+        annusNatalis: 1912,
+        annusMortis: 1941,
       },
     ]
-    expect(findTheOldest(people).name).toBe('Ray');
+    expect(findTheOldest(populus).name).toBe('Ray');
   });
   test('finds the oldest person if yearOfDeath field is undefined for the oldest person', () => {
-    const people = [
+    const populus = [
       {
         name: "Carly",
-        yearOfBirth: 1066,
+        annusNatalis: 1066,
       },
       {
         name: "Ray",
-        yearOfBirth: 1962,
-        yearOfDeath: 2011,
+        annusNatalis: 1962,
+        annusMortis: 2011,
       },
       {
         name: "Jane",
-        yearOfBirth: 1912,
-        yearOfDeath: 1941,
+        annusNatalis: 1912,
+        annusMortis: 1941,
       },
     ]
-    expect(findTheOldest(people).name).toBe('Carly');
+    expect(findTheOldest(populus).name).toBe('Carly');
   });
 });
