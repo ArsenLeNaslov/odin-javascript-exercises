@@ -12,3 +12,9 @@ const cleanedString = string
 
 // Checks if the cleaned string is equal to its reverse
 const reversedString = cleanedString.split('').reverse().join('');
+
+// Returns true if the cleaned string is a palindrome, false otherwise
+return cleanedString === reversedString;
+
+// Do not edit below this line
+module.exports = palindromes;
