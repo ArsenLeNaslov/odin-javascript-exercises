@@ -19,6 +19,16 @@ const fibonacci = function(countArgu) {
     let firstPrev = 1;
     let secondPrev = 0;
 
+// Calculate Fibonacci numbers iteratively up to the Nth
+    for (let i = 2; i <= count; i++) {
+        let current = firstPrev + secondPrev;
+        secondPrev = firstPrev;
+        firstPrev = current;
+    }
+
+// Return the nth Fibonacci number
+    return firstPrev;
+};
 
 // Do not edit below this line
 module.exports = fibonacci;
